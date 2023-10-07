@@ -1,9 +1,12 @@
-function App() {
+import React from 'react';
+import { Hero, Navbar } from './components';
 
+const App = () => {
   return (
-   <div className="w-screen h-screen bg-red-500">
-
-   </div>
+    <div>
+      <Navbar />
+      <Hero />
+    </div>
   )
 }
 
