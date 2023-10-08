@@ -8,7 +8,7 @@ const Hero = () => {
       <div className='md:max-w-[1480px] m-auto grid md:grid-cols-2 max-w-[600px]  px-4 md:px-0'>
         <div className='flex flex-col justify-start gap-[5px]'>
           <p className='py-2 md:text-2xl text-[#2929ab] font-bold'>CHASE YOUR FITNESS WINS</p>
-          <h1 className='md:leading-[72px] md:text-6xl text-4xl font-semibold'>Discover the <br /><span className='text-[#FFB703]'>Power of Fitness </span> in Your Enriched Life!</h1>
+          <h1 className='md:leading-[72px] md:text-5xl text-4xl font-semibold'>Discover the <br /><span className='text-[#FFB703]'>Power of Fitness <br /></span> in Your Enriched Life!</h1>
           <p className='pt-5 pb-4 md:pb-8 mr-18 text:base md:text-lg text-gray-600'>Track your progress, set goals, and achieve your fitness targets with our advanced fitness tracking website.</p>
           <div className='flex'>
             <button className='flex justify-between items-center bg-transparent px-6 gap-2 mr-5 rounded-md border border-[#2929ab]'><img src={lock} />Login</button>
