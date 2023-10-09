@@ -6,7 +6,7 @@ const Workflow = () => {
         <div className='w-full bg-white pt-20 md:py-[3.2rem] ml-0 md:ml-28 md:grid md:grid-cols-2'>
             <div className='md:max-w-[1480px] m-auto max-w-[600px]  px-4 md:px-0'>
                 <div className='flex flex-col justify-start gap-[5px]'>
-                    <h1 className='md:leading-[72px] md:text-5xl text-[2rem] font-semibold leading-[2.9rem]'>Achieve Your <span className='text-[#FFB703]'>Fitness Goals</span><br /> With Ease</h1>
+                    <h1 className='md:leading-[55px] md:text-[2.5rem] text-[2rem] font-semibold leading-[2.9rem]'>Achieve Your <span className='text-[#FFB703]'>Fitness Goals</span><br /> With Ease</h1>
                     <p className='pt-1 pb-4 md:pb-8 mr-18 text:base md:text-lg text-gray-600'>Track your progress, set goals, and achieve your fitness targets with our advanced fitness tracking website.</p>
                     <div className='flex'>
                         <button className='px-4 py-3 rounded-md bg-[#2b2bb1] text-white text-sm md:text-[14px] font-semibold mr-3'>Get Started</button>
@@ -14,7 +14,7 @@ const Workflow = () => {
                 </div>
             </div>
 
-            <section className="w-full md:max-w-[1480px] m-auto max-w-[600px]  px-4 md:px-0 pt-7 md:pt-0 md:mb-18">
+            <section className="w-full md:max-w-[1480px] m-auto max-w-[600px] px-4 md:px-0 pt-7 md:pt-0 md:mb-18">
                 <div>
                     <ul>
                         <li className="relative flex items-baseline gap-6 pb-5">

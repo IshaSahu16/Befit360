@@ -6,7 +6,7 @@ import whyusbanner from '../assets/whyusbanner.svg'
 
 const Whyus = () => {
     return (
-        <div className='md:max-w-[1480px] m-auto grid md:grid-cols-2 max-w-[600px] gap-1 px-4 md:px-0 py-8 '>
+        <div className='md:max-w-[1480px] mb-3 m-auto grid md:grid-cols-2 max-w-[600px] gap-1 px-4 md:px-0 py-8 '>
 
             <img src={whyusbanner} className="max-[768px]:hidden md:order-first md:ml-[6rem] rounded-xl md:w-[60%]" />
 
