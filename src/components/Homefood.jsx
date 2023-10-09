@@ -1,5 +1,4 @@
 import React from 'react'
-import whyusbanner from '../assets/whyusbanner.svg'
 
 const Homefood = () => {
     return (
