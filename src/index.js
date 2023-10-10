@@ -4,6 +4,6 @@ import Whyus from "./Whyus"
 import Workflow from "./Workflow"
 import Testimonial from "./Testimonial"
 import Cta from "./Cta"
-import Footer from "./Footer"
+import Formbmi from "./Formbmi"
 
-export {Navbar, Hero, Whyus, Workflow, Testimonial, Cta, Footer}
+export {Navbar, Hero, Whyus, Workflow, Testimonial, Cta, Footer, Formbmi}
