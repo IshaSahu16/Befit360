@@ -1,101 +1,77 @@
-import React from 'react'
+import React, {useState} from 'react'
+import bmibanner from '../assets/bmibanner.svg'
 
 const Formbmi = () => {
+ 
+  const [weight, setWeight] = useState(0)
+  const [height, setHeight] = useState(0)
+  const [bmi, setBmi] = useState('')
+  const [message, setMessage] = useState('')
+ 
+  let calcBmi = (event) => {
+
+    event.preventDefault()
+ 
+    if (weight === 0 || height === 0) {
+      alert('Please enter a valid weight and height')
+    } else {
+      let bmi = (weight / (height * height))
+      setBmi(bmi.toFixed(1))
+ 
+      if (bmi < 25) {
+        setMessage('You are underweight')
+      } else if (bmi >= 25 && bmi < 30) {
+        setMessage('You are a healthy weight')
+      } else {
+        setMessage('You are overweight')
+      }
+    }
+  }
+  
+  let reload = () => {
+    window.location.reload()
+  }
+
   return (
 
-    <div>
+    <div className='w-full px-4 bg-[#fffcf4] pt-6 pb-9 md:py-14 md:flex'>
+        <div className='md:px-24  md:max-w-[700px] md:basis-1/2'> 
+            <h1 className='md:leading-[72px] md:text-5xl text-3xl md:text-[2.5rem] font-semibold text-[#262682]'>BMI Calculator</h1>
+            <p className='pt-2 md:pt-0 pb-4 md:pb-6 mr-18 text-[1.1rem] font-normal md:text-lg text-[#5a5a5a]'>Enter your age and weight to calculate BMI</p>
 
-    <form>
-        <div class="mb-6">
-             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 text-black">Height (In cms)</label>
-             <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your height" required/>
-         </div>
+            <form onSubmit={calcBmi}>
+                <div className="mb-6">
+                    <label for="email" className="block mb-2 text-normal font-medium text-[#6c6c6c]">Height (In ms)</label>
+                    <input value={height} onChange={(e) => setHeight(e.target.value)} className=" text-gray-900 text-normal rounded-lg block w-full p-2.5 border border-[#c2c2c2] " placeholder="Enter your height" required/>
+                </div>
 
-        <div class="mb-6">
-            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 text-black">Weight (In kilograms)</label>
-            <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"   placeholder="Enter your weight" required/>
-        </div>
+                <div className="mb-6">
+                    <label for="password" className="block mb-2 text-normal font-medium text-[#6c6c6c]">Weight (In kilograms)</label>
+                    <input value={weight} onChange={(event) => setWeight(event.target.value)} className="text-gray-900 text-normal rounded-lg block w-full p-2.5 border border-[#c2c2c2]"  placeholder="Enter your weight" required/>
+                </div>
         
-        <div className='flex'>
-            <button className='flex justify-between items-center bg-transparent px-6 gap-2 mr-5 rounded-md border border-[#2929ab]'>Reload</button>
-            <button className='px-8 py-3 rounded-md bg-[#2929ab] text-white text-sm md:text-[14px] font-semibold mr-3'>Submit</button>
-          </div>
-    </form>
+                <div className='flex'>
+                    <button type='submit' className='px-8 py-3 rounded-md bg-[#2828af] text-white text-base md:text-[14px] font-semibold mr-3'>Submit</button>
+                    <button type='submit' className='flex justify-between items-center text-[#525252] font-medium text-base bg-transparent px-6 gap-2 mr-5 rounded-md border border-[#3b3bc7]' onClick={reload}>Reload</button>
+                </div>
+            </form>
+
+            <div className='center mt-5'>
+                <h3 className='text-[1.2rem] text-[#606060] font-medium'>Your BMI is: {bmi}</h3>
+                <p className='text-[1.2rem] text-[#606060] font-medium'>{message}</p>
+            </div>
+        </div>
+
+        <div className='hidden md:block md:pl-16 md:basis-1/2'>
+            <div>
+                <img src={bmibanner}  />
+            </div>
+        </div>
+
+       
     </div>
   )
 }
 
 export default Formbmi
-
-
-
-// import React, {useState} from 'react'
- 
-// function App() {
- 
-//   // state
-//   const [weight, setWeight] = useState(0)
-//   const [height, setHeight] = useState(0)
-//   const [bmi, setBmi] = useState('')
-//   const [message, setMessage] = useState('')
- 
-//   let calcBmi = (event) => {
-//     //prevent submitting to the server
-//     event.preventDefault()
- 
-//     if (weight === 0 || height === 0) {
-//       alert('Please enter a valid weight and height')
-//     } else {
-//       let bmi = (weight / (height * height) * 703)
-//       setBmi(bmi.toFixed(1))
- 
-//       // Logic for message
- 
-//       if (bmi < 25) {
-//         setMessage('You are underweight')
-//       } else if (bmi >= 25 && bmi < 30) {
-//         setMessage('You are a healthy weight')
-//       } else {
-//         setMessage('You are overweight')
-//       }
-//     }
-//   }
- 
- 
-//   let reload = () => {
-//     window.location.reload()
-//   }
- 
-//   return (
-//     <div className="app">
-//     <div className='container'>
-//       <h2 className='center'>BMI Calculator</h2>
-//       <form onSubmit={calcBmi}>
- 
-//         <div>
-//           <label>Weight (lbs)</label>
-//           <input value={weight} onChange={(e) => setWeight(e.target.value)} />
-//         </div>
- 
-//         <div>
-//           <label>Height (in)</label>
-//           <input value={height} onChange={(event) => setHeight(event.target.value)} />
-//         </div>
- 
-//         <div>
-//           <button className='btn' type='submit'>Submit</button>
-//           <button className='btn btn-outline' onClick={reload} type='submit'>Reload</button>
-//         </div>
-//       </form>
- 
-//       <div className='center'>
-//         <h3>Your BMI is: {bmi}</h3>
-//         <p>{message}</p>
-//       </div>
-//     </div>
-//   </div>
-//   );
-// }
- 
-// export default App;
 
