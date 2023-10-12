@@ -2,7 +2,7 @@ import React from 'react'
 
 const Allfaq = () => {
     return (
-
+        // testimonials section
         <div className="px-4 py-8 md:py-12 md:px-24 bg-[#fefcf8]">
             <div className="flex flex-col max-w-6xl mx-auto md:flex-row">
                 <h2 className="w-full mr-8 text-[1.6rem] mb-6 text-xl md:text-3xl font-extrabold leading-9 text-[#fec64d] md:w-1/3">

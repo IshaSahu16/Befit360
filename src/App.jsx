@@ -7,6 +7,7 @@ import Faq from './pages/Faq'
 import Bmi from './pages/Bmi'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+// Router for easy navigation
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 

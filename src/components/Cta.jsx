@@ -3,6 +3,7 @@ import cta from '../assets/cta.svg'
 
 const Cta = () => {
     return (
+        // call to action section
         <div className='w-full bg-[#f6f8ff] py-7 md:py-10 '>
             <div className='md:max-w-[1480px] m-auto grid md:grid-cols-2 gap-4 md:gap-8 max-w-[600px] items-center  px-4 md:px-0'>
                 <img src={cta} className="w-[450px] mx-auto" />

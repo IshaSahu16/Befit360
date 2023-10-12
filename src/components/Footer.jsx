@@ -13,7 +13,7 @@ const Footer = () => {
                     <h3 className='py-2 text-[#3f3f3f] '>Call : +123 300 123</h3>
                     <h3 className='md:py-2 text-[#3f3f3f]'>Befit360 Befit360 is a fitness tracking  <br></br> platform designed to help you monitor your <br></br>health and wellness through tracking your exercise, nutrition.</h3>
                 </div>
-
+                
                 <div>
                     <h3 className='text-2xl font-semibold'>Explore</h3>
                     <ul className='md:py-6 text-[#6D737A]'>

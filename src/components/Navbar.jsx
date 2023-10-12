@@ -5,6 +5,7 @@ import hamburger from '../assets/hamburger.svg'
 import close from '../assets/close.svg'
 import { Link } from 'react-router-dom';
 
+// hamburger icon toggle effect
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   const handleClick = () => setToggle(!toggle)

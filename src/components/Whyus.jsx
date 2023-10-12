@@ -11,7 +11,7 @@ const Whyus = () => {
             <img src={whyusbanner} className="max-[768px]:hidden md:order-first md:ml-[6rem] rounded-xl md:w-[78%]" />
 
             <div className="w-full h-96 py-7 md:py-0 max-w-[600px] m-auto flex-col justify-start items-start inline-flex md:mr-[7rem] md:pt-0">
-                <div className=" text-[#2929ab] text-2xl font-bold mb-1 md:mt-[-2.5rem]">Why Choose Us?</div>
+                <div className="text-[#2929ab] text-2xl font-bold mb-1 md:mt-[-2.5rem]">Why Choose Us?</div>
                 <div className="self-stretch  text-gray-600 text-base mb-2 ">Our app provides a seamless experience for tracking your fitness progress</div>
                 <div className="self-stretch h-96 py-3.5 flex-col justify-center items-center gap-5 md:gap-7 flex">
                     <div className="self-stretch justify-start items-center gap-7 inline-flex">

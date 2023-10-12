@@ -2,12 +2,14 @@ import React, {useState} from 'react'
 import bmibanner from '../assets/bmibanner.svg'
 
 const Formbmi = () => {
- 
+  
+  // Setting Variables 
   const [weight, setWeight] = useState(0)
   const [height, setHeight] = useState(0)
   const [bmi, setBmi] = useState('')
   const [message, setMessage] = useState('')
  
+  // Function for calculating bmi of individual
   let calcBmi = (event) => {
 
     event.preventDefault()
@@ -28,6 +30,7 @@ const Formbmi = () => {
     }
   }
   
+  // Reload Function
   let reload = () => {
     window.location.reload()
   }

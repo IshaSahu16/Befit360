@@ -15,7 +15,7 @@ const Workflow = () => {
                 </div>
             </div>
 
-            <section className="w-full md:max-w-[1480px] m-auto max-w-[600px] px-4 md:px-0 pt-7 md:pt-0 md:mb-18">
+            <section className='w-full md:max-w-[1480px] m-auto max-w-[600px] px-4 md:px-0 pt-7 md:pt-0 md:mb-18'>
                 <div>
                     <ul>
                         <li className="relative flex items-baseline gap-6 pb-5">
