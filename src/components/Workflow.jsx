@@ -50,9 +50,7 @@ const Workflow = () => {
                                     <p className=" text-normal text-base text-[#5e5e5e] md:text-lg mt-2">Discover inspirational content, quotes to keep you motivated.</p>
                                 </div>
                             </div>
-                        </li>
-                        
-                        
+                        </li>                        
                     </ul>
                 </div>
             </section>

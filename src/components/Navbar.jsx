@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className={toggle ? 'absolute -10 p-4 bg-white w-full md:hidden' : 'hidden'}>
         <ul>
           <li className='p-4 hover:bg-gray-100 text-sm'><Link to="/">Home</Link></li>
-          <li className='p-4 hover:bg-gray-100 text-sm'><Link to="/Fooddiary">Food Diary</Link></li>
+          {/* <li className='p-4 hover:bg-gray-100 text-sm'><Link to="/Fooddiary">Food Diary</Link></li> */}
           <li className='p-4 hover:bg-gray-100 text-sm'><Link to="/Faq">FAQ's</Link></li>
           {/* <li className='p-4 hover:bg-gray-100 text-sm'>FAQ's</li> */}
           <li className='p-4 hover:bg-gray-100 text-sm'><Link to="/Bmi">BMI Calculator</Link></li>

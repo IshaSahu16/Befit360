@@ -4,8 +4,8 @@ import comma from '../assets/comma.svg'
 
 const Testimonial = () => {
     return (
-        <div className="md:w-full bg-white pt-8 pb-12 md:pb-20 md:ml-[-24px]">
-            <div className="container mx-auto px-4">
+        <div className="md:w-full bg-white pt-8 pb-12 md:pb-20 md:ml-[7rem]">
+            <div className="container mx-auto  ">
                 <h2 className="text-3xl font-semibold text-[#2a2a8d] mb-4 md:text-4xl md:pb-4">What our clients say about us!</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-9">
