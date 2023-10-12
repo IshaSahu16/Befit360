@@ -6,7 +6,7 @@ const Signupform = () => {
     <div>
       <div className='circlePosition w-[150px] h-[150px] md:h-[250px] left:[30%] md:w-[300px] md:bg-[#ffde66]  bg-[#ffd15d] rounded-[100%] absolute z-1 top-[30%] md:left-[64%] translate-x-[-50%] translate-y-[-50%] blur-[50px] '>
       </div>
-      <div className='circlePosition w-[600px] h-[200px] bg-[#a0a3ff] md:w-[300px] md:bg-[#97a3ff] md:h-[250px] rounded-[100%] absolute z-1 md:top-[80%] top-[65%] md:left-[35%] translate-x-[-50%] translate-y-[-50%] blur-[50px] '>
+      <div className='circlePosition w-[600px] h-[200px] bg-[#a0a3ff] md:w-[300px] md:bg-[#9da8fd] md:h-[250px] rounded-[100%] absolute z-1 md:top-[80%] top-[65%] md:left-[35%] translate-x-[-50%] translate-y-[-50%] blur-[50px] '>
       </div>
       <div className="md:m-12 my-8 mx-4 ">
 

@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className='hidden md:flex items-center'>
           <ul className='flex gap-11'>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/Fooddiary">Food Diary</Link></li>
+            {/* <li><Link to="/Fooddiary">Food Diary</Link></li> */}
             <li><Link to="/Faq">FAQ's</Link></li>
             <li><Link to="/Bmi">BMI Calculator</Link></li>
           </ul>

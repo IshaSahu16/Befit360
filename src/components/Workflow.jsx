@@ -1,5 +1,6 @@
 import React from 'react'
 import check from '../assets/check.svg'
+import { Link } from 'react-router-dom';
 
 const Workflow = () => {
     return (
@@ -9,7 +10,7 @@ const Workflow = () => {
                     <h1 className='md:leading-[55px] md:text-[2.5rem] text-[2rem] font-semibold leading-[2.9rem]'>Achieve Your <span className='text-[#FFB703]'>Fitness Goals</span><br /> With Ease</h1>
                     <p className='pt-1 pb-4 md:pb-8 mr-18 text:base md:text-lg text-gray-600'>Track your progress, set goals, and achieve your fitness targets with our advanced fitness tracking website.</p>
                     <div className='flex'>
-                        <button className='px-4 py-3 rounded-md bg-[#2b2bb1] text-white text-sm md:text-[14px] font-semibold mr-3'>Get Started</button>
+                        <button className='px-4 py-3 rounded-md bg-[#2b2bb1] text-white text-sm md:text-[14px] font-semibold mr-3'><Link to="/Login">Get Started </Link></button>
                     </div>
                 </div>
             </div>

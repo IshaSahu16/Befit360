@@ -8,7 +8,7 @@ const Whyus = () => {
     return (
         <div className='md:max-w-[1480px] mb-3 m-auto grid md:grid-cols-2 max-w-[600px] gap-1 px-4 md:px-0 py-8 '>
 
-            <img src={whyusbanner} className="max-[768px]:hidden md:order-first md:ml-[6rem] rounded-xl md:w-[60%]" />
+            <img src={whyusbanner} className="max-[768px]:hidden md:order-first md:ml-[6rem] rounded-xl md:w-[78%]" />
 
             <div className="w-full h-96 py-7 md:py-0 max-w-[600px] m-auto flex-col justify-start items-start inline-flex md:mr-[7rem] md:pt-0">
                 <div className=" text-[#2929ab] text-2xl font-bold mb-1 md:mt-[-2.5rem]">Why Choose Us?</div>

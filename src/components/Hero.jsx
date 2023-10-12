@@ -1,6 +1,7 @@
 import React from 'react'
 import heromobimg from '../assets/heroimg.svg'
 import lock from '../assets/lock.svg'
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -11,8 +12,8 @@ const Hero = () => {
           <h1 className='md:leading-[72px] md:text-5xl text-4xl font-semibold'>Discover the <br /><span className='text-[#FFB703]'>Power of Fitness <br /></span> in Your Enriched Life!</h1>
           <p className='pt-5 pb-4 md:pb-8 mr-18 text:base md:text-lg text-gray-600'>Track your progress, set goals, and achieve your fitness targets with our advanced fitness tracking website.</p>
           <div className='flex'>
-            <button className='flex justify-between items-center bg-transparent px-6 gap-2 mr-5 rounded-md border border-[#2929ab]'><img src={lock} />Login</button>
-            <button className='px-8 py-3 rounded-md bg-[#2929ab] text-white text-sm md:text-[14px] font-semibold mr-3'>Sign Up For Free</button>
+            <button className='flex justify-between items-center bg-transparent px-6 gap-2 mr-5 rounded-md border border-[#2929ab]'><img src={lock} /><Link to="/Login">Login</Link></button>
+            <button className='px-8 py-3 rounded-md bg-[#2929ab] text-white text-sm md:text-[14px] font-semibold mr-3'><Link to="/Signup">Sign Up For Free</Link></button>
           </div>
         </div>
   

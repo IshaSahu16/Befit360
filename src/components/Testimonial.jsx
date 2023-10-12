@@ -45,9 +45,9 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <p className="text-gray-600">
-                            "I absolutely love this product! It has made my life so much easier. Highly recommended."
+                            "Your team's technical expertise has been invaluable. You've taken it to the next level."
                         </p>
-                        <p className="text-gray-500">CEO, ABC Company</p>
+                        <p className="text-gray-500">NonProfit Founder</p>
                     </div>
                     <div className=" rounded-lg p-6 shadow-md bg-[#fffefc] border border-gray-100">
                         <img src={comma} className='h-12 float-right' />
@@ -65,9 +65,9 @@ const Testimonial = () => {
                             </div>
                         </div>
                         <p className="text-gray-600">
-                            "I absolutely love this product! It has made my life so much easier. Highly recommended."
+                            "Exceptional! Your strategies have boosted our conversion rates, and our business is thriving."
                         </p>
-                        <p className="text-gray-500">CEO, ABC Company</p>
+                        <p className="text-gray-500">Blogger & Influencer</p>
                     </div>
                 </div>
             </div>
