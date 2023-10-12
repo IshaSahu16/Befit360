@@ -37,7 +37,7 @@ const Footer = () => {
                     <h3 className='text-2xl font-semibold'>Subscribe</h3>
                     <h3 className='md:py-3 text-[#3f3f3f]'>Praesent nulla massa, hendrerit <br></br> vestibulum gravida in, feugiat auctor felis.</h3>
                     <form className='py-4'>
-                        <input className='bg-[#F2F3F4] p-3 w-full rounded'placeholder='Email here'/>
+                        <input className='bg-[#f2f2f2] p-3 w-full rounded'placeholder='Email here'/>
                         <button className='max-[780px]:w-full my-4 px-3 py-3 md:px-5 rounded-md bg-[#2929ab] text-white font-medium'>Subscribe Now</button>
                     </form>
                 </div>
